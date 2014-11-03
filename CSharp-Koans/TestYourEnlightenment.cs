@@ -27,13 +27,14 @@ namespace CSharp_Koans{
 
     [TestClass]
     public class TestingStringKoans {
-
         StringKoans testStringKoans = new StringKoans();
+        //----------START----------Tests for StringAdd problem
         [TestMethod]
-
         public void TestThatStringAddReturnsHelloWorldGivenHelloandWorld() {
             Assert.IsTrue("HelloWorld" == testStringKoans.StringAdd("Hello", "World"));
         }
+
+        //----------END----------Tests for StringAdd problem
 
     } 
 
