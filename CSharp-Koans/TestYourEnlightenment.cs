@@ -6,6 +6,8 @@ namespace CSharp_Koans{
     public class UnitTest1{
         [TestMethod]
         public void TestMethod1() {
+            MathKoans testMathKoans = new MathKoans();
+            Assert.IsTrue(1 == testMathKoans.firstLast(2));
 
 
         }

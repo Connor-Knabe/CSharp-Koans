@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_Koans
 {
-    class FirstLast
+    class MathKoans
     {
 
         public int firstLast (int x){

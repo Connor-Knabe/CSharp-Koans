@@ -1,0 +1,5 @@
+C:\Users\ckgdd\Desktop\CSharp-Koans\CSharp-Koans\bin\Debug\CSharp-Koans.dll
+C:\Users\ckgdd\Desktop\CSharp-Koans\CSharp-Koans\bin\Debug\CSharp-Koans.pdb
+C:\Users\ckgdd\Desktop\CSharp-Koans\CSharp-Koans\obj\Debug\CSharp-Koans.csprojResolveAssemblyReference.cache
+C:\Users\ckgdd\Desktop\CSharp-Koans\CSharp-Koans\obj\Debug\CSharp-Koans.dll
+C:\Users\ckgdd\Desktop\CSharp-Koans\CSharp-Koans\obj\Debug\CSharp-Koans.pdb
