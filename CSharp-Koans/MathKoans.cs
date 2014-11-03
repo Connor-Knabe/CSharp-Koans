@@ -12,7 +12,7 @@ namespace CSharp_Koans
         public int Sum (int x, int y){
             //Method takes in two values and returns both numbers added together
 
-            return 0;
+            return x+y;
         }
     }
 }
