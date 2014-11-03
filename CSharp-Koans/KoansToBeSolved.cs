@@ -19,7 +19,7 @@ namespace CSharp_Koans
     class StringKoans {
         public String StringAdd(String x, String y) {
             //Method takes in two strings and returns both strings concatenated together 
-            return "Solve Me";
+            return x + y;
         }
     }
 }
