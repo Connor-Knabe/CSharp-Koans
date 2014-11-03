@@ -9,9 +9,10 @@ namespace CSharp_Koans
     class MathKoans
     {
 
-        public int firstLast (int x){
+        public int Sum (int x, int y){
+            //Method takes in two values and returns both numbers added together
 
-            return x;
+            return 0;
         }
     }
 }
