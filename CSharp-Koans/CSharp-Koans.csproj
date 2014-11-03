@@ -50,7 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="MathKoans.cs" />
+    <Compile Include="KoansToBeSolved.cs" />
     <Compile Include="TestYourEnlightenment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
