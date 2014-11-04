@@ -53,6 +53,11 @@ namespace CSharp_Koans{
         public void TestFirstLastReturns_ft_Given_feet() {
             Assert.IsTrue("ft" == testStringKoans.FirstLast("feet"));
         }
+        [TestMethod]
+        public void TestFirstLastReturns_sails_Given_feet() {
+            Assert.IsTrue("ss" == testStringKoans.FirstLast("sails"));
+        }
+
 
     } 
 
