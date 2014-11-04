@@ -24,7 +24,7 @@ namespace CSharp_Koans
         public String WordReverse(String sentence) {
 
 
-            return "Y";
+            return "Hello World";
         }
 
 
