@@ -49,7 +49,10 @@ namespace CSharp_Koans{
         public void TestFirstLastReturns_as_Given_apples() {
             Assert.IsTrue("as" == testStringKoans.FirstLast("apples"));
         }
-
+        [TestMethod]
+        public void TestFirstLastReturns_ft_Given_feet() {
+            Assert.IsTrue("ft" == testStringKoans.FirstLast("feet"));
+        }
 
     } 
 
