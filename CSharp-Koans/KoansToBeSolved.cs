@@ -10,7 +10,6 @@ namespace CSharp_Koans
 
         public int Sum (int x, int y){
             //Method takes in two values and returns both numbers added together
-
             return x+y;
         }
     }
@@ -21,5 +20,14 @@ namespace CSharp_Koans
             //Method takes in two strings and returns both strings concatenated together 
             return x + y;
         }
+
+        public String WordReverse(String sentence) {
+
+
+            return "Y";
+        }
+
+
+
     }
 }
