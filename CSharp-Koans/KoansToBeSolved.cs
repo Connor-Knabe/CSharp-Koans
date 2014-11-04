@@ -20,13 +20,16 @@ namespace CSharp_Koans
             //Method takes in two strings and returns both strings concatenated together 
             return x + y;
         }
-
-        public String WordReverse(String sentence) {
-
-
+        public static String revWord(String revWord) {
+            String word1 = "";
+            for (int i = revWord.Length - 1; i >= 0; i--) {
+                word1 += revWord[i];
+            }
+            return word1;
+        }
+        public String WordReverse(String revStr) {
             return "Hello World";
         }
-
 
 
     }
