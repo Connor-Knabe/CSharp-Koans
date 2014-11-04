@@ -20,17 +20,16 @@ namespace CSharp_Koans
             //Method takes in two strings and returns both strings concatenated together 
             return x + y;
         }
-        public static String revWord(String revWord) {
-            String word1 = "";
-            for (int i = revWord.Length - 1; i >= 0; i--) {
-                word1 += revWord[i];
-            }
-            return word1;
-        }
+
         public String WordReverse(String revStr) {
+            //Method takes in a reversed string that each word must individually be reversed NOT the whole sentence
+            //For example olleH dlroW returns Hello World NOT World Hello
             return "Hello World";
         }
-
+        public String FirstLast(String word) {
+            //Method takes in a word and returns the first and last character concatenated together
+            return word;
+        }
 
     }
 }

@@ -9,18 +9,18 @@ namespace CSharp_Koans{
 
         //----------START----------Tests for Sum problem
         [TestMethod]
-        public void TestThatSumReturns4Given_2and2() {
+        public void TestThatSumReturns_4_Given_2and2() {
             Assert.IsTrue( 4 == testMathKoans.Sum(2,2));
         }
         [TestMethod]
-        public void TestThatSumReturns6Given_3and3() {
+        public void TestThatSumReturns_6_Given_3and3() {
             Assert.IsTrue(6 == testMathKoans.Sum(3, 3));
         }
         [TestMethod]
-        public void TestThatSumReturns0Given_0and0() {
+        public void TestThatSumReturns_0_Given_0and0() {
             Assert.IsTrue(0 == testMathKoans.Sum(0, 0));
         }
-        //----------END----------Tests for Sum problem
+
     }
 
     [TestClass]
@@ -30,23 +30,25 @@ namespace CSharp_Koans{
 
         //----------START----------Tests for StringAdd problem
         [TestMethod]
-        public void TestThatStringAddReturnsHelloWorldGiven_HelloandWorld() {
+        public void TestThatStringAddReturns_HelloWorld_Given_HelloandWorld() {
             Assert.IsTrue("HelloWorld" == testStringKoans.StringAdd("Hello", "World"));
         }
         [TestMethod]
-        public void TestThatStringAddReturnsHelloSpaceWorldGiven_HelloSpaceandWorld() {
+        public void TestThatStringAddReturns_HelloSpaceWorld_Given_HelloSpaceandWorld() {
             Assert.IsTrue("Hello World" == testStringKoans.StringAdd("Hello ", "World"));
         }
-        //----------END----------Tests for StringAdd problem
 
         //----------START----------Tests for WordReverse problem
         [TestMethod]
-        public void TestReverseWordReturnsHelloWorldGiven_olleH_Space_dlroW() {
+        public void TestReverseWordReturns_HelloWorld_Given_olleH_Space_dlroW() {
             Assert.IsTrue("Hello World" == testStringKoans.WordReverse("olleH dlroW"));
         }
-  
-        //----------END----------Tests for WordReverse problem
 
+        //----------START----------Tests for FirstLast problem
+        [TestMethod]
+        public void TestFirstLastReturns_as_Given_apples() {
+            Assert.IsTrue("as" == testStringKoans.FirstLast("apples"));
+        }
 
 
     } 
