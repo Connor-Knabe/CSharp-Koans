@@ -28,7 +28,7 @@ namespace CSharp_Koans
         }
         public String FirstLast(String word) {
             //Method takes in a word and returns the first and last character concatenated together
-            return "as";
+            return word.Substring(0, 1) + word.Substring(word.Length - 1);
         }
 
     }
