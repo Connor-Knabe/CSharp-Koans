@@ -14,7 +14,6 @@ namespace CSharp_Koans{
 
         [TestMethod]
         public void TestThatSumReturns6Given3and3() {
-
             Assert.IsTrue(6 == testMathKoans.Sum(3, 3));
         }
         [TestMethod]
@@ -32,6 +31,10 @@ namespace CSharp_Koans{
         [TestMethod]
         public void TestThatStringAddReturnsHelloWorldGivenHelloandWorld() {
             Assert.IsTrue("HelloWorld" == testStringKoans.StringAdd("Hello", "World"));
+        }
+        [TestMethod]
+        public void TestThatStringAddReturnsHelloSpaceWorldGivenHelloSpaceandWorld() {
+            Assert.IsTrue("Hello World" == testStringKoans.StringAdd("Hello ", "World"));
         }
 
         //----------END----------Tests for StringAdd problem
