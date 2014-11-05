@@ -39,7 +39,7 @@ namespace CSharp_Koans
             if (f) return "Fizz";
             if (b) return "Buzz";
 
-            return "Fizz";
+            return word;
         }
 
     }
