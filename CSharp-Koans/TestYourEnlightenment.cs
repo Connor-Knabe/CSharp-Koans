@@ -21,6 +21,12 @@ namespace CSharp_Koans{
             Assert.IsTrue(0 == testMathKoans.Sum(0, 0));
         }
 
+        //----------START----------Tests for Pythagorean problem
+        [TestMethod]
+        public void TestThatPythagoreanReturns_5_Given_4and3() {
+            Assert.IsTrue(5 == testMathKoans.Pythagorean(4, 3));
+        }
+
     }
 
     [TestClass]
