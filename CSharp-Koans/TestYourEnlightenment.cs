@@ -63,6 +63,10 @@ namespace CSharp_Koans{
         public void TestFizzBuzzReturns_Fizz_Given_funny() {
             Assert.IsTrue("Fizz" == testStringKoans.FizzBuzz("funny"));
         }
+        [TestMethod]
+        public void TestFizzBuzzReturns_Buzz_Given_bub() {
+            Assert.IsTrue("Buzz" == testStringKoans.FizzBuzz("bub"));
+        }
 
     } 
 
