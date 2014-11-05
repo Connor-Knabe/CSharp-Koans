@@ -33,6 +33,12 @@ namespace CSharp_Koans
 
         public String FizzBuzz(String word) {
             //Method that takes in a word. If the word starts with "f" return "Fizz". If the word ends with "b" return "Buzz" if the word contains both return "FizzBuzz"
+
+            bool f = word.Substring(0, 1) == "f";
+            bool b = word.Substring(word.Length-1) == "b";
+            if (f) return "Fizz";
+            if (b) return "Buzz";
+
             return "Fizz";
         }
 
