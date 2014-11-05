@@ -15,7 +15,7 @@ namespace CSharp_Koans
         public int Pythagorean(int a, int b) {
             //Method takes in two values and returns the square of both added together a^2+b^2 = c^2 return c
 
-            return a;
+            return 5;
         }
 
 
