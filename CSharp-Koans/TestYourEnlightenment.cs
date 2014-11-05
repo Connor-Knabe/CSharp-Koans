@@ -26,6 +26,10 @@ namespace CSharp_Koans{
         public void TestThatPythagoreanReturns_5_Given_4and3() {
             Assert.IsTrue(5 == testMathKoans.Pythagorean(4, 3));
         }
+        [TestMethod]
+        public void TestThatPythagoreanReturns_13_Given_5and12() {
+            Assert.IsTrue(13 == testMathKoans.Pythagorean(4, 3));
+        }
 
     }
 
