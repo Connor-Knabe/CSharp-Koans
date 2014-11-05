@@ -67,6 +67,10 @@ namespace CSharp_Koans{
         public void TestFizzBuzzReturns_Buzz_Given_bub() {
             Assert.IsTrue("Buzz" == testStringKoans.FizzBuzz("bub"));
         }
+        [TestMethod]
+        public void TestFizzBuzzReturns_Word_Given_Word_with_no_f_b_at_beginning_or_end() {
+            Assert.IsTrue("lad" == testStringKoans.FizzBuzz("lad"));
+        }
 
     } 
 
