@@ -54,10 +54,15 @@ namespace CSharp_Koans{
             Assert.IsTrue("ft" == testStringKoans.FirstLast("feet"));
         }
         [TestMethod]
-        public void TestFirstLastReturns_sails_Given_feet() {
+        public void TestFirstLastReturns_ss_Given_sails() {
             Assert.IsTrue("ss" == testStringKoans.FirstLast("sails"));
         }
 
+        //----------START----------Tests for FizzBuzz problem
+        [TestMethod]
+        public void TestFizzBuzzReturns_Fizz_Given_funny() {
+            Assert.IsTrue("Fizz" == testStringKoans.FizzBuzz("funny"));
+        }
 
     } 
 
