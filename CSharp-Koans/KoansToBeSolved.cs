@@ -36,6 +36,7 @@ namespace CSharp_Koans
 
             bool f = word.Substring(0, 1) == "f";
             bool b = word.Substring(word.Length-1) == "b";
+            if (f & b) return "FizzBuzz";
             if (f) return "Fizz";
             if (b) return "Buzz";
 
