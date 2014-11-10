@@ -96,7 +96,10 @@ namespace CSharp_Koans{
         public void TestDogReturns_true_Given_dog() {
             Assert.IsTrue(testStringKoans.Dog("dog"));
         }
-
+        [TestMethod]
+        public void TestDogReturns_false_Given_bird() {
+            Assert.IsFalse(testStringKoans.Dog("bird"));
+        }
 
     } 
 
