@@ -21,11 +21,11 @@ namespace CSharp_Koans
 
         public int ArrayFirstLast(int[] arr) {
             //Method takes in array of dynamic size that adds the first and last number returning the sum of these two numbers.
-            //if (arr.Length==0) return 0;
+            if (arr.Length==0) return 0;
+
             int a = arr[0];
             int b = arr[arr.Length - 1];
             return a + b;
-
         }
 
 
