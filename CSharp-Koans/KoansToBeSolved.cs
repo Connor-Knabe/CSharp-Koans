@@ -50,5 +50,10 @@ namespace CSharp_Koans
             return word;
         }
 
+        public bool Dog(String word) {
+            //Method that takes in a word. If the word contains d o g in any order return true else return false.
+            return false;
+        }
+
     }
 }

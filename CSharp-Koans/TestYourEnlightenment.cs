@@ -2,6 +2,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CSharp_Koans{
+
+    //-------------------------START-------------------------------------------------Tests for Math Koans
+
     [TestClass]
     public class TestingMathKoans {
         MathKoans testMathKoans = new MathKoans();
@@ -32,6 +35,7 @@ namespace CSharp_Koans{
         }
 
     }
+    //-------------------------START-------------------------------------------------Tests for String Koans
 
     [TestClass]
     public class TestingStringKoans {
@@ -85,6 +89,14 @@ namespace CSharp_Koans{
         public void TestFizzBuzzReturns_FizzBuzz_Given_Fab() {
             Assert.IsTrue("FizzBuzz" == testStringKoans.FizzBuzz("fab"));
         }
+
+
+        //----------START----------Tests for Dog problem
+        [TestMethod]
+        public void TestDogReturns_true_Given_dog() {
+            Assert.IsTrue(testStringKoans.Dog("dog"));
+        }
+
 
     } 
 
