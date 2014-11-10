@@ -49,9 +49,12 @@ namespace CSharp_Koans{
         public void TestThatArrayFirstLastReturns_0_Given_EmptyArray() {
             int[] arr = new int[0];
             Assert.IsTrue(0 == testMathKoans.ArrayFirstLast(arr));
-        } 
-
-
+        }
+        [TestMethod]
+        public void TestThatArrayFirstLastReturns_22_Given_20and2and3and5and1and2() {
+            int[] arr = new int[] { 20, 2, 3, 5, 1, 2 };
+            Assert.IsTrue(22 == testMathKoans.ArrayFirstLast(arr));
+        }
 
 
     }
