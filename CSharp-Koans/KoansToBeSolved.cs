@@ -19,6 +19,12 @@ namespace CSharp_Koans
             return Math.Sqrt(c);
         }
 
+        public int ArrayFirstLast(int[] arr) {
+            //Method takes in array of dynamic size that adds the first and last number returning the sum of these two numbers.
+
+            return 0;
+        }
+
 
     }
 

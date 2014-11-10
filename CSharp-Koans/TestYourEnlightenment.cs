@@ -34,6 +34,15 @@ namespace CSharp_Koans{
             Assert.IsTrue(13 == testMathKoans.Pythagorean(5, 12));
         }
 
+        //----------START----------Tests for Pythagorean problem
+        [TestMethod]
+        public void TestThatArrayFirstLastReturns_5_Given_2and3and3() {
+            int[] arr = new int[] {2, 3, 3};
+            Assert.IsTrue(5 == testMathKoans.ArrayFirstLast(arr));
+        }      
+
+     
+
     }
     //-------------------------START-------------------------------------------------Tests for String Koans
 
