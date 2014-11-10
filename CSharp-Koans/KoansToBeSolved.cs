@@ -52,7 +52,21 @@ namespace CSharp_Koans
 
         public bool Dog(String word) {
             //Method that takes in a word. If the word contains d o g in any order return true else return false.
-            return true;
+            bool d = false;
+            bool o = false;
+            bool g = false;
+            for (int i = 0; i < word.Length; i++) {
+                if (word[i] == 'd') {
+                    d = true;
+                }
+                if (word[i] == 'o') {
+                    o = true;
+                }
+                if (word[i] == 'g') {
+                    g = true;
+                }
+            }
+            return d && o && g;
         }
 
     }
