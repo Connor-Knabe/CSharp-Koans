@@ -34,7 +34,7 @@ namespace CSharp_Koans{
             Assert.IsTrue(13 == testMathKoans.Pythagorean(5, 12));
         }
 
-        //----------START----------Tests for Pythagorean problem
+        //----------START----------Tests for ArrayFirstLast problem
         [TestMethod]
         public void TestThatArrayFirstLastReturns_5_Given_2and3and3() {
             int[] arr = new int[] {2, 3, 3};
@@ -54,6 +54,13 @@ namespace CSharp_Koans{
         public void TestThatArrayFirstLastReturns_22_Given_20and2and3and5and1and2() {
             int[] arr = new int[] { 20, 2, 3, 5, 1, 2 };
             Assert.IsTrue(22 == testMathKoans.ArrayFirstLast(arr));
+        }
+
+        //----------START----------Tests for CountFive problem
+        [TestMethod]
+        public void TestThatCountFiveReturns_1_Given_5and3and3() {
+            int[] arr = new int[] { 5, 3, 3 };
+            Assert.IsTrue(5 == testMathKoans.CountFive(arr));
         }
 
 

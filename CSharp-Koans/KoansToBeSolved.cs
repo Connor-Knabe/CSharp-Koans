@@ -28,6 +28,10 @@ namespace CSharp_Koans
             return a + b;
         }
 
+        public int CountFive(int[] arr) {
+            //Method takes in array of dynamic size that counts number of times 5 appears.
+            return 0;
+        }
 
     }
 
