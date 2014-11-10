@@ -44,7 +44,15 @@ namespace CSharp_Koans{
         public void TestThatArrayFirstLastReturns_6_Given_3and3and3() {
             int[] arr = new int[] { 3, 3, 3 };
             Assert.IsTrue(6 == testMathKoans.ArrayFirstLast(arr));
-        }         
+        }
+        [TestMethod]
+        public void TestThatArrayFirstLastReturns_0_Given_EmptyArray() {
+            int[] arr = new int[0];
+            Assert.IsTrue(0 == testMathKoans.ArrayFirstLast(arr));
+        } 
+
+
+
 
     }
     //-------------------------START-------------------------------------------------Tests for String Koans
