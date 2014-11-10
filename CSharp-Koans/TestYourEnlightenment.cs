@@ -104,6 +104,10 @@ namespace CSharp_Koans{
         public void TestDogReturns_true_Given_dOfasdfg() {
             Assert.IsTrue(testStringKoans.Dog("dOfasdfg"));
         }
+        [TestMethod]
+        public void TestDogReturns_true_Given_adOfg() {
+            Assert.IsTrue(testStringKoans.Dog("adOfg"));
+        }
 
     } 
 
