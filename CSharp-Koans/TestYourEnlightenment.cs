@@ -60,7 +60,7 @@ namespace CSharp_Koans{
         [TestMethod]
         public void TestThatCountFiveReturns_1_Given_5and3and3() {
             int[] arr = new int[] { 5, 3, 3 };
-            Assert.IsTrue(5 == testMathKoans.CountFive(arr));
+            Assert.IsTrue(1 == testMathKoans.CountFive(arr));
         }
 
 
