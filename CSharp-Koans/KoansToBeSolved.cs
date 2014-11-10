@@ -51,18 +51,18 @@ namespace CSharp_Koans
         }
 
         public bool Dog(String word) {
-            //Method that takes in a word. If the word contains d o g in any order return true else return false.
+            //Method that takes in a word. If the word contains d o g in any order return true else return false. Case insensitive will also accept D o G etc.
             bool d = false;
             bool o = false;
             bool g = false;
             for (int i = 0; i < word.Length; i++) {
-                if (word[i] == 'd') {
+                if (word[i] == 'd' || word[i] == 'D') {
                     d = true;
                 }
-                if (word[i] == 'o') {
+                if (word[i] == 'o' || word[i] == 'O') {
                     o = true;
                 }
-                if (word[i] == 'g') {
+                if (word[i] == 'g' || word[i] == 'G') {
                     g = true;
                 }
             }
