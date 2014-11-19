@@ -155,14 +155,16 @@ namespace CSharp_Koans{
 
         //----------START----------Tests for StringAdd problem
         [TestMethod]
-        public void TestThatArrayByTwoReturns_TwoFourSix_GivenArray_OneTwoThree() {
+        public void TestThatArrayByTwoReturns_TwoAsFirstNum_GivenArray_OneTwoThree() {
             int[] arr = new[] { 1, 2, 3 };
-
             int[] resultArr = testArrayKoans.ArrayByTwo(arr);
-
             Assert.IsTrue(resultArr[0] == 2);
-            //Assert.IsTrue(arr[0] == testArrayKoans.ArrayByTwo(arr));
-
+        }
+        [TestMethod]
+        public void TestThatArrayByTwoReturns_TwentyFourAsFirstNum_GivenArray_TwelveTwoThree() {
+            int[] arr = new[] { 12, 2, 3 };
+            int[] resultArr = testArrayKoans.ArrayByTwo(arr);
+            Assert.IsTrue(resultArr[0] == 24);
         }
     }
 }
