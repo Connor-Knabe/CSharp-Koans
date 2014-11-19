@@ -102,9 +102,11 @@ namespace CSharp_Koans
                 return a;
         }
 
-        public string[] ArrayWithS(int[] a) {
+        public string[] ArrayWithS(string[] a) {
             //Method takes in an array of strings and returns that arrays contents with an s at end
-
+            for (int i = 0; i < a.Length; i++) {
+                a[i] = a[i] +"s";
+            }
             return a;
         }
 
