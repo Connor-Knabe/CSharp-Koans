@@ -151,20 +151,25 @@ namespace CSharp_Koans{
     [TestClass]
     public class TestingArrayKoans {
         ArrayKoans testArrayKoans = new ArrayKoans();
-
-
         //----------START----------Tests for ArrayByTwo problem
         [TestMethod]
-        public void TestThatArrayByTwoReturns_TwoAsFirstNum_GivenArray_OneTwoThree() {
+        public void TestThatArrayByTwoReturns_TwoAsFirstNum_Given_Array_OneTwoThree() {
             int[] arr = new[] { 1, 2, 3 };
             int[] resultArr = testArrayKoans.ArrayByTwo(arr);
             Assert.IsTrue(resultArr[0] == 2);
         }
         [TestMethod]
-        public void TestThatArrayByTwoReturns_TwentyFourAsFirstNum_GivenArray_TwelveTwoThree() {
+        public void TestThatArrayByTwoReturns_TwentyFour_AsFirstNum_Given_Array_TwelveTwoThree() {
             int[] arr = new[] { 12, 2, 3 };
             int[] resultArr = testArrayKoans.ArrayByTwo(arr);
             Assert.IsTrue(resultArr[0] == 24);
+        }
+        //----------START----------Tests for ArrayWithS problem
+        [TestMethod]
+        public void TestThatArrayWithSReturns_Strings_AsFirstElement_Given_Array_StringDogAnimal() {
+            string[] arr = new[] { "String", "Dog", "Animal" };
+            string[] resultArr = testArrayKoans.ArrayWithS(arr);
+            Assert.IsTrue(resultArr[0] == "Strings");
         }
     }
 }
