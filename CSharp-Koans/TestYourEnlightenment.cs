@@ -146,4 +146,23 @@ namespace CSharp_Koans{
 
     } 
 
+     //-------------------------START-------------------------------------------------Tests for Array Koans
+
+    [TestClass]
+    public class TestingArrayKoans {
+        ArrayKoans testArrayKoans = new ArrayKoans();
+
+
+        //----------START----------Tests for StringAdd problem
+        [TestMethod]
+        public void TestThatArrayByTwoReturns_TwoFourSix_GivenArray_OneTwoThree() {
+            int[] arr = new[] { 1, 2, 3 };
+
+            int[] resultArr = testArrayKoans.ArrayByTwo(arr);
+
+            Assert.IsTrue(resultArr[0] == 2);
+            //Assert.IsTrue(arr[0] == testArrayKoans.ArrayByTwo(arr));
+
+        }
+    }
 }
