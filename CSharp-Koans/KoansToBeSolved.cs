@@ -93,13 +93,19 @@ namespace CSharp_Koans
 
     class ArrayKoans {
         public int[] ArrayByTwo(int[] a) {
-            //Method takes in an array and returns that arrays contents multiplied by 2
+            //Method takes in an array containing numbers and returns that arrays contents multiplied by 2
 
             for (int i = 0; i < a.Length; i++) {
                 a[i] = a[i] * 2; 
             }
 
                 return a;
+        }
+
+        public string[] ArrayWithS(int[] a) {
+            //Method takes in an array of strings and returns that arrays contents with an s at end
+
+            return a;
         }
 
     }

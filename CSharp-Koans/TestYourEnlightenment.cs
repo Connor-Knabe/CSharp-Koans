@@ -153,7 +153,7 @@ namespace CSharp_Koans{
         ArrayKoans testArrayKoans = new ArrayKoans();
 
 
-        //----------START----------Tests for StringAdd problem
+        //----------START----------Tests for ArrayByTwo problem
         [TestMethod]
         public void TestThatArrayByTwoReturns_TwoAsFirstNum_GivenArray_OneTwoThree() {
             int[] arr = new[] { 1, 2, 3 };
