@@ -90,4 +90,12 @@ namespace CSharp_Koans
         }
 
     }
+
+    class ArrayKoans {
+        public Array ArrayAdd(Array a) {
+            //Method takes in an array and returns that arrays contents multiplied by 2
+            return a;
+        }
+
+    }
 }
