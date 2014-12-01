@@ -183,5 +183,15 @@ namespace CSharp_Koans{
             string[] resultArr = testArrayKoans.ArrayWithS(arr);
             Assert.IsTrue(resultArr[2] == "Animals");
         }
+
+
+        //----------START----------Tests for ArrayReverse problem
+        [TestMethod]
+        public void TestThatArrayReverseReturns_PHPJavaPython_Given_Array_PythonJavaPHP() {
+            string[] arr = new[] { "Python", "Java", "PHP" };
+            string[] resultArr = testArrayKoans.ArrayReverse(arr);
+            Assert.IsTrue(resultArr[0] == "PHP");
+        }
+
     }
 }
