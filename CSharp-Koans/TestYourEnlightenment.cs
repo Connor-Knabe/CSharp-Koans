@@ -147,7 +147,6 @@ namespace CSharp_Koans{
     } 
 
      //-------------------------START-------------------------------------------------Tests for Array Koans
-
     [TestClass]
     public class TestingArrayKoans {
         ArrayKoans testArrayKoans = new ArrayKoans();
@@ -200,4 +199,18 @@ namespace CSharp_Koans{
         }
 
     }
+
+    //-------------------------START-------------------------------------------------Tests for Array Koans
+    [TestClass]
+    public class TestingLogicKoans {
+        LogicKoans testLogicKoans = new LogicKoans();
+        //----------START----------Tests for ArrayByTwo problem
+        [TestMethod]
+        public void TestThatLottery_Returns_False_Given_Num_Ten() {
+            int num = 10;
+            Assert.IsFalse(testLogicKoans.Lottery(num));
+        }
+    }
+
+
 }
