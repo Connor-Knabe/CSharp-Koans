@@ -106,6 +106,11 @@ namespace CSharp_Koans
             }
             return a;
         }
+        public string[] ArrayReverse(string[] a) {
+            //Method takes in an array of strings and returns that arrays reversed
+            Array.Reverse(a);
+            return a;
+        }
 
     }
 }

@@ -187,10 +187,16 @@ namespace CSharp_Koans{
 
         //----------START----------Tests for ArrayReverse problem
         [TestMethod]
-        public void TestThatArrayReverseReturns_PHPJavaPython_Given_Array_PythonJavaPHP() {
+        public void TestThatArrayReverseReturns_PHP_AsFirstElement_Given_Array_PythonJavaPHP() {
             string[] arr = new[] { "Python", "Java", "PHP" };
             string[] resultArr = testArrayKoans.ArrayReverse(arr);
             Assert.IsTrue(resultArr[0] == "PHP");
+        }
+        [TestMethod]
+        public void TestThatArrayReverseReturns_Python_AsThirdElement_Given_Array_PythonJavaPHP() {
+            string[] arr = new[] { "Python", "Java", "PHP" };
+            string[] resultArr = testArrayKoans.ArrayReverse(arr);
+            Assert.IsTrue(resultArr[2] == "Python");
         }
 
     }
