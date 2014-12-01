@@ -177,5 +177,11 @@ namespace CSharp_Koans{
             string[] resultArr = testArrayKoans.ArrayWithS(arr);
             Assert.IsTrue(resultArr[1] == "Dogs");
         }
+        [TestMethod]
+        public void TestThatArrayWithSReturns_Animals_AsThirdElement_Given_Array_StringDogAnimal() {
+            string[] arr = new[] { "String", "Dog", "Animal" };
+            string[] resultArr = testArrayKoans.ArrayWithS(arr);
+            Assert.IsTrue(resultArr[2] == "Animals");
+        }
     }
 }
