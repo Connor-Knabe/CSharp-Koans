@@ -151,6 +151,7 @@ namespace CSharp_Koans
     class LogicKoans {
 
         public bool Lottery(int num) {
+            //Method takes in an number, if the number is greater than 15 return true else return false
 
             return false;
         }

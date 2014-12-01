@@ -210,6 +210,11 @@ namespace CSharp_Koans{
             int num = 10;
             Assert.IsFalse(testLogicKoans.Lottery(num));
         }
+        [TestMethod]
+        public void TestThatLottery_Returns_True_Given_Num_Twenty() {
+            int num = 20;
+            Assert.IsTrue(testLogicKoans.Lottery(num));
+        }
     }
 
 
