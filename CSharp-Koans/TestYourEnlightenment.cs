@@ -197,6 +197,12 @@ namespace CSharp_Koans{
             string[] resultArr = testArrayKoans.ArrayReverse(arr);
             Assert.IsTrue(resultArr[2] == "Python");
         }
+        [TestMethod]
+        public void TestThatArrayReverseReturns_Apple_AsThirdElement_Given_Array_AppleOrangeBanana() {
+            string[] arr = new[] { "Apple", "Orange", "Banana" };
+            string[] resultArr = testArrayKoans.ArrayReverse(arr);
+            Assert.IsTrue(resultArr[2] == "Apple");
+        }
 
     }
 
