@@ -152,7 +152,7 @@ namespace CSharp_Koans
 
         public bool Lottery(int num) {
 
-            return true;
+            return false;
         }
 
     }
