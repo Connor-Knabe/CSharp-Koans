@@ -216,7 +216,7 @@ namespace CSharp_Koans{
     [TestClass]
     public class TestingLogicKoans {
         LogicKoans testLogicKoans = new LogicKoans();
-        //----------START----------Tests for ArrayByTwo problem
+        //----------START----------Tests for Lottery problem
         [TestMethod]
         public void TestThatLottery_Returns_False_Given_Num_Ten() {
             int num = 10;
@@ -231,6 +231,14 @@ namespace CSharp_Koans{
         public void TestThatLottery_Returns_False_Given_Num_One() {
             int num = 1;
             Assert.IsFalse(testLogicKoans.Lottery(num));
+        }
+
+
+        //----------START----------Tests for LotteryLucky problem
+        [TestMethod]
+        public void TestThatLotteryLucky_Returns_False_Given_Num_OneandTrue() {
+            int num = 1;
+            Assert.IsTrue(testLogicKoans.LotteryLucky(num,true));
         }
     }
 

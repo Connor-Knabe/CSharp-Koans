@@ -154,6 +154,10 @@ namespace CSharp_Koans
             //Method takes in an number, if the number is greater than 15 return true else return false
             return (num>15);
         }
+        public bool LotteryLucky(int num, bool weekend) {
+            //Method takes in an number, if the number is greater than 15 return true else return false unless it is on weekend then return true no matter what
+            return false;
+        }
 
     }
 }
