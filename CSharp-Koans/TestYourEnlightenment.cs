@@ -203,6 +203,12 @@ namespace CSharp_Koans{
             string[] resultArr = testArrayKoans.ArrayReverse(arr);
             Assert.IsTrue(resultArr[2] == "Apple");
         }
+        [TestMethod]
+        public void TestThatArrayReverseReturns_Orange_AsSecondElement_Given_Array_AppleOrangeBanana() {
+            string[] arr = new[] { "Apple", "Orange", "Banana" };
+            string[] resultArr = testArrayKoans.ArrayReverse(arr);
+            Assert.IsTrue(resultArr[1] == "Orange");
+        }
 
     }
 
