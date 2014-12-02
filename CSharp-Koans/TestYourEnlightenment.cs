@@ -240,6 +240,11 @@ namespace CSharp_Koans{
             int num = 1;
             Assert.IsTrue(testLogicKoans.LotteryLucky(num,true));
         }
+        [TestMethod]
+        public void TestThatLotteryLucky_Returns_False_Given_Num_OneandFalse() {
+            int num = 1;
+            Assert.IsFalse(testLogicKoans.LotteryLucky(num, false));
+        }
     }
 
 
