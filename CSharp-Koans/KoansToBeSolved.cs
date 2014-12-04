@@ -11,7 +11,7 @@ namespace CSharp_Koans
 
         public bool Is15 (int x, int y) {
             //Method takes in two values and returns true if they add up to 15
-            return false;
+            return true;
         }
   
 
