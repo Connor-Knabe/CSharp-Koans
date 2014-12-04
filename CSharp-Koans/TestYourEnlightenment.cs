@@ -44,7 +44,14 @@ namespace CSharp_Koans{
         public void TestThatAddIsAToStringReturns_Is_a_cat_given_cat() {
             Assert.IsTrue(testBeginnerKoans.AddIsAToString("cat") == "Is a cat");
         }
-
+        [TestMethod]
+        public void TestThatAddIsAToStringReturns_Is_a_dog_given_dog() {
+            Assert.IsTrue(testBeginnerKoans.AddIsAToString("dog") == "Is a dog");
+        }
+        [TestMethod]
+        public void TestThatAddIsAToStringReturns_Is_a_frog_given_frog() {
+            Assert.IsTrue(testBeginnerKoans.AddIsAToString("frog") == "Is a frog");
+        }
 
     }
 
