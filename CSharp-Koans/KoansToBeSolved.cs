@@ -13,7 +13,10 @@ namespace CSharp_Koans
             //Method takes in two values and returns true if they add up to 15
             return (15==x+y);
         }
-  
+        public bool IsNegative(int x, int y) {
+            //Method takes in two values and returns true if their sum is negative
+            return (false);
+        }
 
     }
 
