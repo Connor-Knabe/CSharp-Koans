@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace CSharp_Koans
 {
+
+    class BeginnerKoans {
+
+        public bool Is15 (int x, int y) {
+            //Method takes in two values and returns true if they add up to 15
+            return false;
+        }
+  
+
+    }
+
+
     class MathKoans {
 
         public int Sum (int x, int y){
@@ -155,13 +167,12 @@ namespace CSharp_Koans
         }
         public bool LotteryLucky(int num, bool weekend) {
             //Method takes in an number, if the number is greater than 15 return true else return false unless it is on weekend then return true no matter what
-            
+ 
             if (weekend){
                 return true;
             } else {
                 return (num > 15);
             }
-
         }
 
     }
