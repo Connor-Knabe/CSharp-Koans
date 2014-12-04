@@ -32,7 +32,10 @@ namespace CSharp_Koans{
         public void TestThatIsNegativeReturns_True_Given_1and_negative15() {
             Assert.IsTrue(testBeginnerKoans.IsNegative(1, -15));
         }
-
+        [TestMethod]
+        public void TestThatIsNegativeReturns_False_Given_1and_15() {
+            Assert.IsFalse(testBeginnerKoans.IsNegative(1, 15));
+        }
 
     }
 
