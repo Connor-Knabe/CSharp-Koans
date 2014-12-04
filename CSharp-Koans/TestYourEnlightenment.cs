@@ -40,6 +40,7 @@ namespace CSharp_Koans{
         public void TestThatIsNegativeReturns_True_Given_negative1and_0() {
             Assert.IsTrue(testBeginnerKoans.IsNegative(-1, 0));
         }
+        //----------START----------Tests for AddIsAToString problem
         [TestMethod]
         public void TestThatAddIsAToStringReturns_Is_a_cat_given_cat() {
             Assert.IsTrue(testBeginnerKoans.AddIsAToString("cat") == "Is a cat");
@@ -51,6 +52,11 @@ namespace CSharp_Koans{
         [TestMethod]
         public void TestThatAddIsAToStringReturns_Is_a_frog_given_frog() {
             Assert.IsTrue(testBeginnerKoans.AddIsAToString("frog") == "Is a frog");
+        }
+        //----------START----------Tests for RemoveChar problem
+        [TestMethod]
+        public void TestThatRemoveCharReturns_Th_given_theAnd2() {
+            Assert.IsTrue(testBeginnerKoans.RemoveChar("The",2) == "Th");
         }
 
     }

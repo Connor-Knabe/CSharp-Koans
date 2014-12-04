@@ -18,9 +18,14 @@ namespace CSharp_Koans
             return (x+y<0);
         }
 
-        public string AddIsAToString(string one) {
+        public string AddIsAToString(string a) {
+            //Method takes in a string and returns that string with Is a before it
+            return "Is a "+a;
+        }
+        public string RemoveChar(string a, int indexToRemove) {
+            //Method takes in a string and returns that string with a character removed at index given
 
-            return "Is a "+one;
+            return "";
         }
 
     }
