@@ -20,7 +20,7 @@ namespace CSharp_Koans
 
         public string AddIsAToString(string one) {
 
-            return "Is a cat";
+            return "Is a "+one;
         }
 
     }
