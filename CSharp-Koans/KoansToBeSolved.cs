@@ -15,7 +15,7 @@ namespace CSharp_Koans
         }
         public bool IsNegative(int x, int y) {
             //Method takes in two values and returns true if their sum is negative
-            return (false);
+            return (x+y<0);
         }
 
     }
