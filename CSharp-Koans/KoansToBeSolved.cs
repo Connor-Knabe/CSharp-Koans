@@ -18,6 +18,11 @@ namespace CSharp_Koans
             return (x+y<0);
         }
 
+        public string AddIsAToString(string one) {
+
+            return "Yes";
+        }
+
     }
 
 

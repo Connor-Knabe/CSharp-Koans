@@ -40,6 +40,11 @@ namespace CSharp_Koans{
         public void TestThatIsNegativeReturns_True_Given_negative1and_0() {
             Assert.IsTrue(testBeginnerKoans.IsNegative(-1, 0));
         }
+        [TestMethod]
+        public void TestThatAddIsAToStringReturns_Is_a_cat_given_cat() {
+            Assert.IsTrue(testBeginnerKoans.AddIsAToString("cat") == "Is a cat");
+        }
+
 
     }
 
