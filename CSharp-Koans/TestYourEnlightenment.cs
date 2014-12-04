@@ -6,6 +6,20 @@ namespace CSharp_Koans{
     //-------------------------START-------------------------------------------------Tests for Math Koans
 
     [TestClass]
+    public class TestingBeginnerKoans {
+        BeginnerKoans testBeginnerKoans = new BeginnerKoans();
+
+
+        //----------START----------Tests for is15 problem
+        [TestMethod]
+        public void TestThatIs15Returns_True_Given_10and15() {
+            Assert.IsTrue(testBeginnerKoans.Is15(10,5));
+        }
+    }
+
+
+    //-------------------------START-------------------------------------------------Tests for Math Koans
+    [TestClass]
     public class TestingMathKoans {
         MathKoans testMathKoans = new MathKoans();
 
