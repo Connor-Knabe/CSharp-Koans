@@ -1,9 +1,9 @@
-CSharp-Koans
-============
+#CSharp-Koans#
 
-CSharp-Koans using TDD.
+###CSharp-Koans using TDD.###
 
-How to use:
+#####How to use:#####
+<br />
 1. Clone this repo to a machine with Visual Studio installed
 <br />
 2. Open the project
