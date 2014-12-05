@@ -155,9 +155,15 @@ namespace CSharp_Koans
             } else {
                 return false;
             }
-
-            
         }
+        public bool InRange(int a) {
+            //Method takes in a number the number is in between range 1-15 inclusive return true else return false
+            return false;
+        }
+
+
+
+
     }
 
     class ListKoans {

@@ -314,6 +314,15 @@ namespace CSharp_Koans{
         public void TestThatIsLucky_Returns_True_Given_SevenAndThree() {
             Assert.IsTrue(testLogicKoans.IsLucky(7, 3));
         }
+        //----------START----------Tests for InRange problem
+        [TestMethod]
+        public void TestThatInRange_Returns_False_Given_Sixteen() {
+            Assert.IsFalse(testLogicKoans.InRange(16));
+        }
+        [TestMethod]
+        public void TestThatInRange_Returns_True_Given_Fifteen() {
+            Assert.IsTrue(testLogicKoans.InRange(15));
+        }
         
     }
 
