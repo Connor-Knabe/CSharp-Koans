@@ -386,5 +386,14 @@ namespace CSharp_Koans{
             int[] a = new[] { 0 };
             Assert.IsTrue(testListKoans.SumAll(a) == 0);
         }
+        //----------START----------Tests for FirstLastSum problem
+        [TestMethod]
+        public void TestThatFirstLastSum_Returns_2_Given_Array_OneOne() {
+            int[] a = new[] { 1, 1 };
+            Assert.IsTrue(testListKoans.FirstLastSum(a) == 2);
+        }
+
+
+
     }
 }
