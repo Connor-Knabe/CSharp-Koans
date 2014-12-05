@@ -352,9 +352,13 @@ namespace CSharp_Koans{
         [TestMethod]
         public void TestThatSumAll_Returns_Two_Given_Array_OneOne() {
             int[] a = new[] { 1, 1 };
-            Assert.IsTrue(testListKoans.SumAll(a) == 5);
+            Assert.IsTrue(testListKoans.SumAll(a) == 2);
         }
-
+        [TestMethod]
+        public void TestThatSumAll_Returns_Six_Given_Array_ThreeThree() {
+            int[] a = new[] { 3, 3 };
+            Assert.IsTrue(testListKoans.SumAll(a) == 6);
+        }
 
     }
 }

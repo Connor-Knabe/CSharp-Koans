@@ -165,7 +165,12 @@ namespace CSharp_Koans
         }
         public int SumAll(int[] a) {
             //Method takes in an arrays of integers and then returns the sum of that array.
-            return 5;
+            int total = 0 ;
+            for (int i = 0; i < a.Length; i++) {
+                total += a[i];
+            }
+            return total;
+        
         }
     }
 }
