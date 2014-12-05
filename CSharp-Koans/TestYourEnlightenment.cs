@@ -275,7 +275,7 @@ namespace CSharp_Koans{
 
     }
 
-    //-------------------------START-------------------------------------------------Tests for Array Koans
+    //-------------------------START-------------------------------------------------Tests for Logic Koans
     [TestClass]
     public class TestingLogicKoans {
         LogicKoans testLogicKoans = new LogicKoans();
@@ -295,8 +295,6 @@ namespace CSharp_Koans{
             int num = 1;
             Assert.IsFalse(testLogicKoans.Lottery(num));
         }
-
-
         //----------START----------Tests for LotteryLucky problem
         [TestMethod]
         public void TestThatLotteryLucky_Returns_False_Given_Num_OneandTrue() {
@@ -309,6 +307,20 @@ namespace CSharp_Koans{
             Assert.IsFalse(testLogicKoans.LotteryLucky(num, false));
         }
     }
+
+    //-------------------------START-------------------------------------------------Tests for List Koans
+    [TestClass]
+    public class TestingListKoans {
+        ListKoans testListKoans = new ListKoans();
+        //----------START----------Tests for FirstLast1 problem
+        [TestMethod]
+        public void TestThatFirstLast1_Returns_True_Given_Array_OneTwoThree() {
+            int[] arr = new[] { 1, 2, 3 };
+            Assert.IsTrue(testListKoans.FirstLast1(arr));
+        }
+    }
+
+
 
 
 }

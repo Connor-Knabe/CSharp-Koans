@@ -147,6 +147,19 @@ namespace CSharp_Koans
                 return (num > 15);
             }
         }
+    }
+
+    class ListKoans {
+
+        public bool FirstLast1(int[] nums) {
+            //Method takes in an array of integers, if the array has 1 as the first or last element return true else return false
+            if (nums[0]==1 || nums[nums.Length-1]==1){
+                return true;
+            } else {
+                return false;
+            }
+
+        }
 
     }
 }
