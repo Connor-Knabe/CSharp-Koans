@@ -272,7 +272,6 @@ namespace CSharp_Koans{
             string[] resultArr = testArrayKoans.ArrayReverse(arr);
             Assert.IsTrue(resultArr[1] == "Orange");
         }
-
     }
 
     //-------------------------START-------------------------------------------------Tests for Logic Koans
@@ -306,6 +305,12 @@ namespace CSharp_Koans{
             int num = 1;
             Assert.IsFalse(testLogicKoans.LotteryLucky(num, false));
         }
+        //----------START----------Tests for IsLucky problem
+        [TestMethod]
+        public void TestThatIsLucky_Returns_False_Given_TwoAndThree() {
+            Assert.IsFalse(testLogicKoans.IsLucky(2,3));
+        }
+        
     }
 
     //-------------------------START-------------------------------------------------Tests for List Koans

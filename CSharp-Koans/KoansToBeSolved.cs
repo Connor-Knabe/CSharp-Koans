@@ -140,12 +140,15 @@ namespace CSharp_Koans
         }
         public bool LotteryLucky(int num, bool weekend) {
             //Method takes in an number, if the number is greater than 15 return true else return false unless it is on weekend then return true no matter what
- 
             if (weekend){
                 return true;
             } else {
                 return (num > 15);
             }
+        }
+        public bool IsLucky(int a, int b) {
+            //Method takes in two numbers if one of the numbers is 7 or both numbers add up to 7 return true else return false
+            return false;
         }
     }
 
