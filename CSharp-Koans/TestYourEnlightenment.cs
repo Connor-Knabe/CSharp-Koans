@@ -392,6 +392,11 @@ namespace CSharp_Koans{
             int[] a = new[] { 1, 1 };
             Assert.IsTrue(testListKoans.FirstLastSum(a) == 2);
         }
+        [TestMethod]
+        public void TestThatFirstLastSum_Returns_3_Given_Array_OneTenTwo() {
+            int[] a = new[] { 1, 10, 2 };
+            Assert.IsTrue(testListKoans.FirstLastSum(a) == 3);
+        }
 
 
 
