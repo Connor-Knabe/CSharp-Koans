@@ -333,8 +333,13 @@ namespace CSharp_Koans{
         public void TestThatSameEnd_Returns_True_Given_Array_ThreeFourFive_and_Array_TwoThreeSixFive() {
             int[] a = new[] { 3, 4, 5 };
             int[] b = new[] { 2, 3, 6, 5 };
-
             Assert.IsTrue(testListKoans.SameEnd(a,b));
+        }
+        [TestMethod]
+        public void TestThatSameEnd_Returns_False_Given_Array_ThreeFourFive_and_Array_TwoThreeSixSix() {
+            int[] a = new[] { 3, 4, 5 };
+            int[] b = new[] { 2, 3, 6, 6 };
+            Assert.IsFalse(testListKoans.SameEnd(a, b));
         }
        
     }
