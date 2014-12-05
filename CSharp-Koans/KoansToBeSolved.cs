@@ -132,9 +132,12 @@ namespace CSharp_Koans
         }
         public bool GreaterThanTen(int[] a) {
             //Method takes in an array of integers and returns true if the sum adds up to a total of 10 or more inclusive
-
+            int total = 0;
+            for (int i = 0; i < a.Length; i++) {
+                total += a[i];
+            }
+            return (total>=10);
             
-            return true;
         }
     }
 
