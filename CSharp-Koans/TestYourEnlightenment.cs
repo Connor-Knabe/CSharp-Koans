@@ -341,6 +341,12 @@ namespace CSharp_Koans{
             int[] b = new[] { 2, 3, 6, 6 };
             Assert.IsFalse(testListKoans.SameEnd(a, b));
         }
+        [TestMethod]
+        public void TestThatSameEnd_Returns_False_Given_Array_ThreeFourFive_and_Array_TwoThreeSixSevenFive() {
+            int[] a = new[] { 3, 4, 5 };
+            int[] b = new[] { 2, 3, 6, 7, 5 };
+            Assert.IsTrue(testListKoans.SameEnd(a, b));
+        }
        
     }
 
