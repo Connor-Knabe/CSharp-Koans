@@ -323,6 +323,10 @@ namespace CSharp_Koans{
         public void TestThatInRange_Returns_True_Given_Fifteen() {
             Assert.IsTrue(testLogicKoans.InRange(15));
         }
+        [TestMethod]
+        public void TestThatInRange_Returns_False_Given_Zero() {
+            Assert.IsFalse(testLogicKoans.InRange(0));
+        }
         
     }
 

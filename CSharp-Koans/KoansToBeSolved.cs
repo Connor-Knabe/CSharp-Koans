@@ -159,7 +159,6 @@ namespace CSharp_Koans
         public bool InRange(int a) {
             //Method takes in a number the number is in between range 1-15 inclusive return true else return false
             return (a <= 15 && a >= 1);
-
         }
 
 
