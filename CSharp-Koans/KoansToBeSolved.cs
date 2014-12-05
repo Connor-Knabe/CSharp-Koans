@@ -24,8 +24,9 @@ namespace CSharp_Koans
         }
         public string RemoveChar(string a, int indexToRemove) {
             //Method takes in a string and returns that string with a character removed at index given
-
-            return "Th";
+            String front = a.Substring(0, indexToRemove);
+            String back = a.Substring(indexToRemove + 1);
+            return front+back;
         }
 
     }

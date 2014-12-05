@@ -58,7 +58,10 @@ namespace CSharp_Koans{
         public void TestThatRemoveCharReturns_Th_given_theAnd2() {
             Assert.IsTrue(testBeginnerKoans.RemoveChar("The",2) == "Th");
         }
-
+        [TestMethod]
+        public void TestThatRemoveCharReturns_he_given_theAnd0() {
+            Assert.IsTrue(testBeginnerKoans.RemoveChar("The", 0) == "he");
+        }
     }
 
 
