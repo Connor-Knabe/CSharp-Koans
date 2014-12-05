@@ -278,6 +278,16 @@ namespace CSharp_Koans{
             int[] arr = new[] { 1, 2, 3 };
             Assert.IsFalse(testArrayKoans.GreaterThanTen(arr));
         }
+        [TestMethod]
+        public void TestThatGreaterThanTen_Returns_True__Given_FiveFive() {
+            int[] arr = new[] { 5, 5 };
+            Assert.IsTrue(testArrayKoans.GreaterThanTen(arr));
+        }
+        [TestMethod]
+        public void TestThatGreaterThanTen_Returns_False__Given_TwentyTwenty() {
+            int[] arr = new[] { 20, 20 };
+            Assert.IsTrue(testArrayKoans.GreaterThanTen(arr));
+        }
     }
 
     //-------------------------START-------------------------------------------------Tests for Logic Koans
