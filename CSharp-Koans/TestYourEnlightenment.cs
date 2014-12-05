@@ -318,6 +318,17 @@ namespace CSharp_Koans{
             int[] arr = new[] { 1, 2, 3 };
             Assert.IsTrue(testListKoans.FirstLast1(arr));
         }
+        [TestMethod]
+        public void TestThatFirstLast1_Returns_False_Given_Array_TwoTwoThree() {
+            int[] arr = new[] { 2, 2, 3 };
+            Assert.IsFalse(testListKoans.FirstLast1(arr));
+        }
+        [TestMethod]
+        public void TestThatFirstLast1_Returns_True_Given_Array_TwoThreeFourFiveSixOne() {
+            int[] arr = new[] { 2, 3, 4, 5, 6, 1};
+            Assert.IsTrue(testListKoans.FirstLast1(arr));
+        }
+       
     }
 
 
