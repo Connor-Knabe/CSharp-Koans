@@ -191,7 +191,7 @@ namespace CSharp_Koans
         public int FirstLastSum(int[] a) {
             //Method takes in an arrays of integers and then returns the sum of the first and last integers.
 
-            return 0;
+            return (a[0]+a[a.Length-1]);
         }
     }
 }
