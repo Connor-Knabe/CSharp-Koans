@@ -148,7 +148,15 @@ namespace CSharp_Koans
         }
         public bool IsLucky(int a, int b) {
             //Method takes in two numbers if one of the numbers is 7 or both numbers add up to 7 return true else return false
-            return false;
+            if (a == 7 || b == 7) {
+                return true;
+            } else if (a + b == 7) {
+                return true;
+            } else {
+                return false;
+            }
+
+            
         }
     }
 

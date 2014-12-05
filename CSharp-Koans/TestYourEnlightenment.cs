@@ -310,6 +310,10 @@ namespace CSharp_Koans{
         public void TestThatIsLucky_Returns_False_Given_TwoAndThree() {
             Assert.IsFalse(testLogicKoans.IsLucky(2,3));
         }
+        [TestMethod]
+        public void TestThatIsLucky_Returns_True_Given_SevenAndThree() {
+            Assert.IsTrue(testLogicKoans.IsLucky(7, 3));
+        }
         
     }
 
