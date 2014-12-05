@@ -66,6 +66,10 @@ namespace CSharp_Koans{
         public void TestThatRemoveCharReturns_boolean_given_bbooleanAnd0() {
             Assert.IsTrue(testBeginnerKoans.RemoveChar("bboolean", 0) == "boolean");
         }
+        [TestMethod]
+        public void TestThatRemoveCharReturns_red_given_fredAnd0() {
+            Assert.IsTrue(testBeginnerKoans.RemoveChar("fred", 0) == "red");
+        }
     }
 
 
@@ -150,12 +154,6 @@ namespace CSharp_Koans{
         [TestMethod]
         public void TestThatStringAddReturns_HelloSpaceWorld_Given_HelloSpaceandWorld() {
             Assert.IsTrue("Hello World" == testStringKoans.StringAdd("Hello ", "World"));
-        }
-
-        //----------START----------Tests for WordReverse problem
-        [TestMethod]
-        public void TestReverseWordReturns_HelloWorld_Given_olleH_Space_dlroW() {
-            Assert.IsTrue("Hello World" == testStringKoans.WordReverse("olleH dlroW"));
         }
 
         //----------START----------Tests for FirstLast problem
