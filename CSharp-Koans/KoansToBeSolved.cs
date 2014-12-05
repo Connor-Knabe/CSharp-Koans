@@ -161,8 +161,11 @@ namespace CSharp_Koans
         }
         public bool SameEnd(int[] a, int[] b) {
             //Method takes in an two arrays of integers, if both arrays have the same last number return true else return false
-
             return (a[a.Length - 1] == b[b.Length - 1]);
+        }
+        public int SumAll(int[] a) {
+            //Method takes in an arrays of integers and then returns the sum of that array.
+            return 1;
         }
     }
 }

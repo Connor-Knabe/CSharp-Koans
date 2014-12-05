@@ -11,4 +11,6 @@
 <br />
 4. There are tests that will pass if you have solved the Koan correctly
 <br />
-5. Work until all problems are solved and/or you gain enlightenment
+5. To check to see your progress click Test(navigation bar) > Run > All tests.  Also Ctrl+R, A will work
+<br />
+6. Work until all problems are solved and/or you gain enlightenment

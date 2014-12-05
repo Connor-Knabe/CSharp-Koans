@@ -347,10 +347,14 @@ namespace CSharp_Koans{
             int[] b = new[] { 2, 3, 6, 7, 5 };
             Assert.IsTrue(testListKoans.SameEnd(a, b));
         }
-       
+
+        //----------START----------Tests for SumAll problem
+        [TestMethod]
+        public void TestThatSumAll_Returns_Two_Given_Array_OneOne() {
+            int[] a = new[] { 1, 1 };
+            Assert.IsTrue(testListKoans.SumAll(a) == 5);
+        }
+
+
     }
-
-
-
-
 }
