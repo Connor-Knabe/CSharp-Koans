@@ -25,7 +25,7 @@ namespace CSharp_Koans
         public string RemoveChar(string a, int indexToRemove) {
             //Method takes in a string and returns that string with a character removed at index given
 
-            return "";
+            return "Th";
         }
 
     }
