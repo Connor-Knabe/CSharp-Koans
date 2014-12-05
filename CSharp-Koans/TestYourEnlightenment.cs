@@ -359,6 +359,10 @@ namespace CSharp_Koans{
             int[] a = new[] { 3, 3 };
             Assert.IsTrue(testListKoans.SumAll(a) == 6);
         }
-
+        [TestMethod]
+        public void TestThatSumAll_Returns_Zero_Given_Array_Zero() {
+            int[] a = new[] { 0 };
+            Assert.IsTrue(testListKoans.SumAll(a) == 0);
+        }
     }
 }
