@@ -130,6 +130,12 @@ namespace CSharp_Koans
             Array.Reverse(a);
             return a;
         }
+        public bool GreaterThanTen(int[] a) {
+            //Method takes in an array of integers and returns true if the sum adds up to a total of 10 or more inclusive
+
+            
+            return true;
+        }
     }
 
     class LogicKoans {

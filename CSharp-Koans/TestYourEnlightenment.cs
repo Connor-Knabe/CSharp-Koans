@@ -272,6 +272,12 @@ namespace CSharp_Koans{
             string[] resultArr = testArrayKoans.ArrayReverse(arr);
             Assert.IsTrue(resultArr[1] == "Orange");
         }
+        //----------START----------Tests for GreaterThanTen problem
+        [TestMethod]
+        public void TestThatGreaterThanTen_Returns_False__Given_OneTwoThree() {
+            int[] arr = new[] { 1, 2, 3 };
+            Assert.IsFalse(testArrayKoans.GreaterThanTen(arr));
+        }
     }
 
     //-------------------------START-------------------------------------------------Tests for Logic Koans
@@ -396,6 +402,11 @@ namespace CSharp_Koans{
         public void TestThatFirstLastSum_Returns_3_Given_Array_OneTenTwo() {
             int[] a = new[] { 1, 10, 2 };
             Assert.IsTrue(testListKoans.FirstLastSum(a) == 3);
+        }
+        [TestMethod]
+        public void TestThatFirstLastSum_Returns_10_Given_Array_TenTenZero() {
+            int[] a = new[] { 10, 10, 0 };
+            Assert.IsTrue(testListKoans.FirstLastSum(a) == 10);
         }
 
 
