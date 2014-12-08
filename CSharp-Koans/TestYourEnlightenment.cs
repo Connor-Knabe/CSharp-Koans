@@ -10,7 +10,7 @@ namespace CSharp_Koans{
         BeginnerKoans testBeginnerKoans = new BeginnerKoans();
 
 
-        //----------START----------Tests for is15 problem
+        //----------START----------Tests for Is15 problem
         [TestMethod]
         public void TestThatIs15Returns_True_Given_10and5() {
             Assert.IsTrue(testBeginnerKoans.Is15(10,5));
