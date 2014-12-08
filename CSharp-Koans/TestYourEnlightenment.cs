@@ -44,6 +44,14 @@ namespace CSharp_Koans{
         public void TestThatIsNegativeReturns_True_Given_negative1and_0() {
             Assert.IsTrue(testBeginnerKoans.IsNegative(-1, 0));
         }
+        [TestMethod]
+        public void TestThatIsNegativeReturns_False_Given_negative21and_0() {
+            Assert.IsFalse(testBeginnerKoans.IsNegative(21, 0));
+        }
+        [TestMethod]
+        public void TestThatIsNegativeReturns_False_Given_negative11and_20() {
+            Assert.IsFalse(testBeginnerKoans.IsNegative(-11, 20));
+        }
         //----------START----------Tests for AddIsAToString problem
         [TestMethod]
         public void TestThatAddIsAToStringReturns_Is_a_cat_given_cat() {
@@ -57,6 +65,14 @@ namespace CSharp_Koans{
         public void TestThatAddIsAToStringReturns_Is_a_frog_given_frog() {
             Assert.IsTrue(testBeginnerKoans.AddIsAToString("frog") == "Is a frog");
         }
+        [TestMethod]
+        public void TestThatAddIsAToStringReturns_Is_a_pen_given_pen() {
+            Assert.IsTrue(testBeginnerKoans.AddIsAToString("pen") == "Is a pen");
+        }
+        [TestMethod]
+        public void TestThatAddIsAToStringReturns_Is_a_car_given_car() {
+            Assert.IsTrue(testBeginnerKoans.AddIsAToString("car") == "Is a car");
+        }
         //----------START----------Tests for RemoveChar problem
         [TestMethod]
         public void TestThatRemoveCharReturns_Th_given_theAnd2() {
@@ -67,12 +83,16 @@ namespace CSharp_Koans{
             Assert.IsTrue(testBeginnerKoans.RemoveChar("The", 0) == "he");
         }
         [TestMethod]
-        public void TestThatRemoveCharReturns_boolean_given_bbooleanAnd0() {
-            Assert.IsTrue(testBeginnerKoans.RemoveChar("bboolean", 0) == "boolean");
+        public void TestThatRemoveCharReturns_boolean_given_bbooleanAnd1() {
+            Assert.IsTrue(testBeginnerKoans.RemoveChar("bboolean", 1) == "boolean");
         }
         [TestMethod]
         public void TestThatRemoveCharReturns_red_given_fredAnd0() {
             Assert.IsTrue(testBeginnerKoans.RemoveChar("fred", 0) == "red");
+        }
+        [TestMethod]
+        public void TestThatRemoveCharReturns_bad_given_bladAnd1() {
+            Assert.IsTrue(testBeginnerKoans.RemoveChar("blad", 1) == "bad");
         }
     }
 
@@ -96,6 +116,14 @@ namespace CSharp_Koans{
         public void TestThatSumReturns_0_Given_0and0() {
             Assert.IsTrue(0 == testMathKoans.Sum(0, 0));
         }
+        [TestMethod]
+        public void TestThatSumReturns_100_Given_50and50() {
+            Assert.IsTrue(100 == testMathKoans.Sum(50, 50));
+        }
+        [TestMethod]
+        public void TestThatSumReturns_55_Given_50and5() {
+            Assert.IsTrue(55 == testMathKoans.Sum(50, 5));
+        }
 
         //----------START----------Tests for Pythagorean problem
         [TestMethod]
@@ -105,6 +133,18 @@ namespace CSharp_Koans{
         [TestMethod]
         public void TestThatPythagoreanReturns_13_Given_5and12() {
             Assert.IsTrue(13 == testMathKoans.Pythagorean(5, 12));
+        }
+        [TestMethod]
+        public void TestThatPythagoreanReturns_50_Given_48and14() {
+            Assert.IsTrue(50 == testMathKoans.Pythagorean(48, 14));
+        }
+        [TestMethod]
+        public void TestThatPythagoreanReturns_25_Given_24and7() {
+            Assert.IsTrue(25 == testMathKoans.Pythagorean(24, 7));
+        }
+        [TestMethod]
+        public void TestThatPythagoreanReturns_10_Given_8and6() {
+            Assert.IsTrue(10 == testMathKoans.Pythagorean(8, 6));
         }
 
         //----------START----------Tests for ArrayFirstLast problem
