@@ -56,6 +56,22 @@ The different types of questions include:
 * Logic
 * List
 
+With in these question classes there are methods that need to be solved.
 
+In the TestYourEnlightenment.cs file there are also methods and classes that correspond to the KoansToBeSolved.cs file.
 
+An example of a test that will be checking to see if you have implemented the method correctly would be .
+ ```
+[TestClass]
+public class TestingBeginnerKoans {
+	BeginnerKoans testBeginnerKoans = new BeginnerKoans();
+	//----------START----------Tests for Is15 problem
+	[TestMethod]
+	public void TestThatIs15Returns_True_Given_10and5() {
+		Assert.IsTrue(testBeginnerKoans.Is15(10,5));
+	}
+}
+```
+
+You can see that there is a class and method being tested here and 10,5 are being passed into this method which should return true because the method is checking to see if given two values their sum is 15.
 
