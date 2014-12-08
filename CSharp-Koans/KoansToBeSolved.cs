@@ -11,22 +11,21 @@ namespace CSharp_Koans
 
         public bool Is15 (int x, int y) {
             //Method takes in two values and returns true if they add up to 15
-            return (15==x+y);
+            return false;
         }
         public bool IsNegative(int x, int y) {
             //Method takes in two values and returns true if their sum is negative
-            return (x+y<0);
+            return false;
         }
 
         public string AddIsAToString(string a) {
             //Method takes in a string and returns that string with Is a before it
-            return "Is a "+a;
+            return "";
         }
         public string RemoveChar(string a, int indexToRemove) {
             //Method takes in a string and returns that string with a character removed at index given
-            String front = a.Substring(0, indexToRemove);
-            String back = a.Substring(indexToRemove + 1);
-            return front+back;
+
+            return "";
         }
 
     }
@@ -36,21 +35,16 @@ namespace CSharp_Koans
 
         public int Sum (int x, int y){
             //Method takes in two values and returns both numbers added together
-            return x+y;
+            return 1;
         }
         public double Pythagorean(double a, double b) {
-            //Method takes in two values and returns the square of both added together a^2+b^2 = c^2 return c
-            double c = Math.Pow(a,2) + Math.Pow(b,2);
-            
-            return Math.Sqrt(c);
+            //Method takes in two values and returns the square of both added together a^2+b^2 = c^2 return c            
+            return 1;
         }
 
         public int ArrayFirstLast(int[] arr) {
             //Method takes in array of dynamic size that adds the first and last number returning the sum of these two numbers.
-            if (arr.Length==0) return 0;
-
-            int a = arr[0];
-            int b = arr[arr.Length - 1];
+       
             return a + b;
         }
 
