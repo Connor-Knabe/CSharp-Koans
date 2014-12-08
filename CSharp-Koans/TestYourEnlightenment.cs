@@ -12,44 +12,44 @@ namespace CSharp_Koans{
 
         //----------START----------Tests for Is15 problem
         [TestMethod]
-        public void TestThatIs15Returns_True_Given_10and5() {
+        public void TestThatIs15Returns_True_Given_TenAndFive() {
             Assert.IsTrue(testBeginnerKoans.Is15(10,5));
         }
         [TestMethod]
-        public void TestThatIs15Returns_True_Given_0nd15() {
+        public void TestThatIs15Returns_True_Given_ZeroAndFifteen() {
             Assert.IsTrue(testBeginnerKoans.Is15(0, 15));
         }
         [TestMethod]
-        public void TestThatIs15Returns_False_Given_10and15() {
+        public void TestThatIs15Returns_False_Given_TenAndFifteen() {
             Assert.IsFalse(testBeginnerKoans.Is15(10, 15));
         }
         [TestMethod]
-        public void TestThatIs15Returns_True_Given_1and14() {
+        public void TestThatIs15Returns_True_Given_OneAndFourteen() {
             Assert.IsTrue(testBeginnerKoans.Is15(1, 14));
         }
         [TestMethod]
-        public void TestThatIs15Returns_False_Given_1and15() {
+        public void TestThatIs15Returns_False_Given_OneAndFifteen() {
             Assert.IsFalse(testBeginnerKoans.Is15(1, 15));
         }
         //----------START----------Tests for isNegative problem
         [TestMethod]
-        public void TestThatIsNegativeReturns_True_Given_1and_negative15() {
+        public void TestThatIsNegativeReturns_True_Given_OneAndNegativeFifteen() {
             Assert.IsTrue(testBeginnerKoans.IsNegative(1, -15));
         }
         [TestMethod]
-        public void TestThatIsNegativeReturns_False_Given_1and_15() {
+        public void TestThatIsNegativeReturns_False_Given_OneAndFifteen() {
             Assert.IsFalse(testBeginnerKoans.IsNegative(1, 15));
         }
         [TestMethod]
-        public void TestThatIsNegativeReturns_True_Given_negative1and_0() {
+        public void TestThatIsNegativeReturns_True_Given_negativeOneAndZero() {
             Assert.IsTrue(testBeginnerKoans.IsNegative(-1, 0));
         }
         [TestMethod]
-        public void TestThatIsNegativeReturns_False_Given_negative21and_0() {
+        public void TestThatIsNegativeReturns_False_Given_negativeTwentyOneAndZero() {
             Assert.IsFalse(testBeginnerKoans.IsNegative(21, 0));
         }
         [TestMethod]
-        public void TestThatIsNegativeReturns_False_Given_negative11and_20() {
+        public void TestThatIsNegativeReturns_False_Given_negativeElevenAndTwenty() {
             Assert.IsFalse(testBeginnerKoans.IsNegative(-11, 20));
         }
         //----------START----------Tests for AddIsAToString problem
@@ -75,23 +75,23 @@ namespace CSharp_Koans{
         }
         //----------START----------Tests for RemoveChar problem
         [TestMethod]
-        public void TestThatRemoveCharReturns_Th_given_theAnd2() {
+        public void TestThatRemoveCharReturns_Th_given_theAndTwo() {
             Assert.IsTrue(testBeginnerKoans.RemoveChar("The",2) == "Th");
         }
         [TestMethod]
-        public void TestThatRemoveCharReturns_he_given_theAnd0() {
+        public void TestThatRemoveCharReturns_he_given_theAndZero() {
             Assert.IsTrue(testBeginnerKoans.RemoveChar("The", 0) == "he");
         }
         [TestMethod]
-        public void TestThatRemoveCharReturns_boolean_given_bbooleanAnd1() {
+        public void TestThatRemoveCharReturns_boolean_given_bbooleanAndOne() {
             Assert.IsTrue(testBeginnerKoans.RemoveChar("bboolean", 1) == "boolean");
         }
         [TestMethod]
-        public void TestThatRemoveCharReturns_red_given_fredAnd0() {
+        public void TestThatRemoveCharReturns_red_given_fredAndZero() {
             Assert.IsTrue(testBeginnerKoans.RemoveChar("fred", 0) == "red");
         }
         [TestMethod]
-        public void TestThatRemoveCharReturns_bad_given_bladAnd1() {
+        public void TestThatRemoveCharReturns_bad_given_bladAndOne() {
             Assert.IsTrue(testBeginnerKoans.RemoveChar("blad", 1) == "bad");
         }
     }
@@ -105,19 +105,19 @@ namespace CSharp_Koans{
 
         //----------START----------Tests for Sum problem
         [TestMethod]
-        public void TestThatSumReturns_4_Given_2and2() {
+        public void TestThatSumReturns_Four_Given_TwoAndTwo() {
             Assert.IsTrue( 4 == testMathKoans.Sum(2,2));
         }
         [TestMethod]
-        public void TestThatSumReturns_6_Given_3and3() {
+        public void TestThatSumReturns_Six_Given_ThreeAndThree() {
             Assert.IsTrue(6 == testMathKoans.Sum(3, 3));
         }
         [TestMethod]
-        public void TestThatSumReturns_0_Given_0and0() {
+        public void TestThatSumReturns_Zero_Given_ZeroAndZero() {
             Assert.IsTrue(0 == testMathKoans.Sum(0, 0));
         }
         [TestMethod]
-        public void TestThatSumReturns_100_Given_50and50() {
+        public void TestThatSumReturns_OneHundred_Given_FiftyAndFifty() {
             Assert.IsTrue(100 == testMathKoans.Sum(50, 50));
         }
         [TestMethod]
@@ -127,76 +127,76 @@ namespace CSharp_Koans{
 
         //----------START----------Tests for Pythagorean problem
         [TestMethod]
-        public void TestThatPythagoreanReturns_5_Given_4and3() {
+        public void TestThatPythagoreanReturns_Five_Given_FourAndThree() {
             Assert.IsTrue(5 == testMathKoans.Pythagorean(4, 3));
         }
         [TestMethod]
-        public void TestThatPythagoreanReturns_13_Given_5and12() {
+        public void TestThatPythagoreanReturns_Thirteen_Given_FiveAndTwelve() {
             Assert.IsTrue(13 == testMathKoans.Pythagorean(5, 12));
         }
         [TestMethod]
-        public void TestThatPythagoreanReturns_50_Given_48and14() {
+        public void TestThatPythagoreanReturns_Fifty_Given_FortyEightAndFourteen() {
             Assert.IsTrue(50 == testMathKoans.Pythagorean(48, 14));
         }
         [TestMethod]
-        public void TestThatPythagoreanReturns_25_Given_24and7() {
+        public void TestThatPythagoreanReturns_TwentyFive_Given_TwentyFourAndSeven() {
             Assert.IsTrue(25 == testMathKoans.Pythagorean(24, 7));
         }
         [TestMethod]
-        public void TestThatPythagoreanReturns_10_Given_8and6() {
+        public void TestThatPythagoreanReturns_Ten_Given_EightAndSix() {
             Assert.IsTrue(10 == testMathKoans.Pythagorean(8, 6));
         }
 
         //----------START----------Tests for ArrayFirstLast problem
         [TestMethod]
-        public void TestThatArrayFirstLastReturns_5_Given_2and3and3() {
+        public void TestThatArrayFirstLastReturns_Five_Given_TwoAndThreeAndThree() {
             int[] arr = new int[] {2, 3, 3};
             Assert.IsTrue(5 == testMathKoans.ArrayFirstLast(arr));
         }
         [TestMethod]
-        public void TestThatArrayFirstLastReturns_6_Given_3and3and3() {
+        public void TestThatArrayFirstLastReturns_Six_Given_ThreeAndThreeAndThree() {
             int[] arr = new int[] { 3, 3, 3 };
             Assert.IsTrue(6 == testMathKoans.ArrayFirstLast(arr));
         }
         [TestMethod]
-        public void TestThatArrayFirstLastReturns_0_Given_EmptyArray() {
+        public void TestThatArrayFirstLastReturns_Zero_Given_EmptyArray() {
             int[] arr = new int[0];
             Assert.IsTrue(0 == testMathKoans.ArrayFirstLast(arr));
         }
         [TestMethod]
-        public void TestThatArrayFirstLastReturns_22_Given_20and2and3and5and1and2() {
+        public void TestThatArrayFirstLastReturns_TwentyTwo_Given_TwentyAndTwoAndThreeAndFiveAndOneAndTwo() {
             int[] arr = new int[] { 20, 2, 3, 5, 1, 2 };
             Assert.IsTrue(22 == testMathKoans.ArrayFirstLast(arr));
         }
         [TestMethod]
-        public void TestThatArrayFirstLastReturns_5_Given_5and1and1and0() {
+        public void TestThatArrayFirstLastReturns_Five_Given_FiveAndOneAndOneAndZero() {
             int[] arr = new int[] { 5, 1, 1, 0  };
             Assert.IsTrue(5 == testMathKoans.ArrayFirstLast(arr));
         }
 
         //----------START----------Tests for CountFive problem
         [TestMethod]
-        public void TestThatCountFiveReturns_1_Given_5and3and3() {
+        public void TestThatCountFiveReturns_One_Given_FiveAndThreeAndThree() {
             int[] arr = new int[] { 5, 3, 3 };
             Assert.IsTrue(1 == testMathKoans.CountFive(arr));
         }
         [TestMethod]
-        public void TestThatCountFiveReturns_0_Given_3and3and3() {
+        public void TestThatCountFiveReturns_Zero_Given_ThreeAndThreeAndThree() {
             int[] arr = new int[] { 3, 3, 3 };
             Assert.IsTrue(0 == testMathKoans.CountFive(arr));
         }
         [TestMethod]
-        public void TestThatCountFiveReturns_3_Given_5and5and5() {
+        public void TestThatCountFiveReturns_Three_Given_FiveAndFiveAndFive() {
             int[] arr = new int[] { 5, 5, 5 };
             Assert.IsTrue(3 == testMathKoans.CountFive(arr));
         }
         [TestMethod]
-        public void TestThatCountFiveReturns_2_Given_5and5and1() {
+        public void TestThatCountFiveReturns_Two_Given_FiveAndFiveAndOne() {
             int[] arr = new int[] { 5, 5, 1 };
             Assert.IsTrue(2 == testMathKoans.CountFive(arr));
         }
         [TestMethod]
-        public void TestThatCountFiveReturns_4_Given_5and5and5and5() {
+        public void TestThatCountFiveReturns_Four_Given_FiveAndFiveAndFiveAndFive() {
             int[] arr = new int[] { 5, 5, 5, 5 };
             Assert.IsTrue(4 == testMathKoans.CountFive(arr));
         }
@@ -584,8 +584,6 @@ namespace CSharp_Koans{
             int[] a = new[] { 10, 10, 0 };
             Assert.IsTrue(testListKoans.FirstLastSum(a) == 10);
         }
-
-
 
     }
 }
