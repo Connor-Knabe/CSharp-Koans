@@ -3,6 +3,7 @@
 ###CSharp-Koans using TDD.###
 
 #####How to use:#####
+https://github.com/Connor-Knabe/CSharp-Koans
 1. Clone this repo to a machine with Visual Studio installed
 <br />
 2. Open the project
