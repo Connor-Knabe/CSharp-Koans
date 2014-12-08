@@ -518,37 +518,59 @@ namespace CSharp_Koans{
         ListKoans testListKoans = new ListKoans();
         //----------START----------Tests for FirstLast1 problem
         [TestMethod]
-        public void TestThatFirstLast1_Returns_True_Given_Array_OneTwoThree() {
+        public void TestThatFirstLast1_Returns_True_Given_Array_OneAndTwoAndThree() {
             int[] arr = new[] { 1, 2, 3 };
             Assert.IsTrue(testListKoans.FirstLast1(arr));
         }
         [TestMethod]
-        public void TestThatFirstLast1_Returns_False_Given_Array_TwoTwoThree() {
+        public void TestThatFirstLast1_Returns_False_Given_Array_TwoAndTwoAndThree() {
             int[] arr = new[] { 2, 2, 3 };
             Assert.IsFalse(testListKoans.FirstLast1(arr));
         }
         [TestMethod]
-        public void TestThatFirstLast1_Returns_True_Given_Array_TwoThreeFourFiveSixOne() {
+        public void TestThatFirstLast1_Returns_True_Given_Array_TwoAndThreeAndFourAndFiveAndSixAndOne() {
             int[] arr = new[] { 2, 3, 4, 5, 6, 1};
+            Assert.IsTrue(testListKoans.FirstLast1(arr));
+        }
+        [TestMethod]
+        public void TestThatFirstLast1_Returns_False_Given_Array_TwoAndZero() {
+            int[] arr = new[] { 2, 0 };
+            Assert.IsFalse(testListKoans.FirstLast1(arr));
+        }
+        [TestMethod]
+        public void TestThatFirstLast1_Returns_True_Given_Array_One() {
+            int[] arr = new[] { 1 };
             Assert.IsTrue(testListKoans.FirstLast1(arr));
         }
         //----------START----------Tests for SameEnd problem
         [TestMethod]
-        public void TestThatSameEnd_Returns_True_Given_Array_ThreeFourFive_and_Array_TwoThreeSixFive() {
+        public void TestThatSameEnd_Returns_True_Given_Array_ThreeAndFourAndFive_and_Array_TwoAndThreeAndSixAndFive() {
             int[] a = new[] { 3, 4, 5 };
             int[] b = new[] { 2, 3, 6, 5 };
             Assert.IsTrue(testListKoans.SameEnd(a,b));
         }
         [TestMethod]
-        public void TestThatSameEnd_Returns_False_Given_Array_ThreeFourFive_and_Array_TwoThreeSixSix() {
+        public void TestThatSameEnd_Returns_False_Given_Array_ThreeAndFourAndFive_and_Array_TwoAndThreeAndSixAndSix() {
             int[] a = new[] { 3, 4, 5 };
             int[] b = new[] { 2, 3, 6, 6 };
             Assert.IsFalse(testListKoans.SameEnd(a, b));
         }
         [TestMethod]
-        public void TestThatSameEnd_Returns_False_Given_Array_ThreeFourFive_and_Array_TwoThreeSixSevenFive() {
+        public void TestThatSameEnd_Returns_False_Given_Array_ThreeAndFourAndFive_and_Array_TwoAndThreeAndSixAndSevenAndFive() {
             int[] a = new[] { 3, 4, 5 };
             int[] b = new[] { 2, 3, 6, 7, 5 };
+            Assert.IsTrue(testListKoans.SameEnd(a, b));
+        }
+        [TestMethod]
+        public void TestThatSameEnd_Returns_True_Given_Array_One_and_Array_One() {
+            int[] a = new[] { 1 };
+            int[] b = new[] { 1 };
+            Assert.IsTrue(testListKoans.SameEnd(a, b));
+        }
+        [TestMethod]
+        public void TestThatSameEnd_Returns_True_Given_Array_FiveAndFive_and_Array_SixAndFive() {
+            int[] a = new[] { 5, 5 };
+            int[] b = new[] { 6, 5 };
             Assert.IsTrue(testListKoans.SameEnd(a, b));
         }
 
@@ -568,22 +590,41 @@ namespace CSharp_Koans{
             int[] a = new[] { 0 };
             Assert.IsTrue(testListKoans.SumAll(a) == 0);
         }
+        [TestMethod]
+        public void TestThatSumAll_Returns_Twenty_Given_Array_TenAndTen() {
+            int[] a = new[] { 10, 10 };
+            Assert.IsTrue(testListKoans.SumAll(a) == 20);
+        }
+        [TestMethod]
+        public void TestThatSumAll_Returns_ThirtyThree_Given_Array_ElevenAndTwentyTwo() {
+            int[] a = new[] { 11, 22 };
+            Assert.IsTrue(testListKoans.SumAll(a) == 33);
+        }
         //----------START----------Tests for FirstLastSum problem
         [TestMethod]
-        public void TestThatFirstLastSum_Returns_2_Given_Array_OneOne() {
+        public void TestThatFirstLastSum_Returns_Two_Given_Array_OneAndOne() {
             int[] a = new[] { 1, 1 };
             Assert.IsTrue(testListKoans.FirstLastSum(a) == 2);
         }
         [TestMethod]
-        public void TestThatFirstLastSum_Returns_3_Given_Array_OneTenTwo() {
+        public void TestThatFirstLastSum_Returns_Three_Given_Array_OneAndTenAndTwo() {
             int[] a = new[] { 1, 10, 2 };
             Assert.IsTrue(testListKoans.FirstLastSum(a) == 3);
         }
         [TestMethod]
-        public void TestThatFirstLastSum_Returns_10_Given_Array_TenTenZero() {
+        public void TestThatFirstLastSum_Returns_Ten_Given_Array_TenAndTenAndZero() {
             int[] a = new[] { 10, 10, 0 };
             Assert.IsTrue(testListKoans.FirstLastSum(a) == 10);
         }
-
+        [TestMethod]
+        public void TestThatFirstLastSum_Returns_Six_Given_Array_ThreeAndZeroAndThree() {
+            int[] a = new[] { 3, 0, 3 };
+            Assert.IsTrue(testListKoans.FirstLastSum(a) == 6);
+        }
+        [TestMethod]
+        public void TestThatFirstLastSum_Returns_Five_Given_Array_ThreeAndTwo() {
+            int[] a = new[] { 3, 2 };
+            Assert.IsTrue(testListKoans.FirstLastSum(a) == 5);
+        }
     }
 }
