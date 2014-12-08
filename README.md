@@ -15,3 +15,17 @@ https://github.com/Connor-Knabe/CSharp-Koans
 5. To check to see your progress click Test(navigation bar) > Run > All tests.  Also Ctrl+R, A will work
 <br />
 6. Work until all problems are solved and/or you gain enlightenment
+
+######Things to keep in mind:######
+The answers to these problems are located in the KoanAnswers.cs file which is in the CSharp-Koans folder.
+
+
+
+###Documentation.###
+
+Inspiration for this project came from http://rubykoans.com/ which can be found at https://github.com/neo/ruby_koans
+
+The whole idea behind this C# project is to help people who are just starting off with the C# language to learn the syntax, methods, and Test Driven Development.
+The idea behind Test Driven Development(TDD) is that you write tests first which fail and then implement the code which will make the test pass.
+
+
