@@ -168,6 +168,11 @@ namespace CSharp_Koans{
             int[] arr = new int[] { 20, 2, 3, 5, 1, 2 };
             Assert.IsTrue(22 == testMathKoans.ArrayFirstLast(arr));
         }
+        [TestMethod]
+        public void TestThatArrayFirstLastReturns_5_Given_5and1and1and0() {
+            int[] arr = new int[] { 5, 1, 1, 0  };
+            Assert.IsTrue(5 == testMathKoans.ArrayFirstLast(arr));
+        }
 
         //----------START----------Tests for CountFive problem
         [TestMethod]
@@ -179,6 +184,21 @@ namespace CSharp_Koans{
         public void TestThatCountFiveReturns_0_Given_3and3and3() {
             int[] arr = new int[] { 3, 3, 3 };
             Assert.IsTrue(0 == testMathKoans.CountFive(arr));
+        }
+        [TestMethod]
+        public void TestThatCountFiveReturns_3_Given_5and5and5() {
+            int[] arr = new int[] { 5, 5, 5 };
+            Assert.IsTrue(3 == testMathKoans.CountFive(arr));
+        }
+        [TestMethod]
+        public void TestThatCountFiveReturns_2_Given_5and5and1() {
+            int[] arr = new int[] { 5, 5, 1 };
+            Assert.IsTrue(2 == testMathKoans.CountFive(arr));
+        }
+        [TestMethod]
+        public void TestThatCountFiveReturns_4_Given_5and5and5and5() {
+            int[] arr = new int[] { 5, 5, 5, 5 };
+            Assert.IsTrue(4 == testMathKoans.CountFive(arr));
         }
 
 
@@ -198,6 +218,18 @@ namespace CSharp_Koans{
         [TestMethod]
         public void TestThatStringAddReturns_HelloSpaceWorld_Given_HelloSpaceandWorld() {
             Assert.IsTrue("Hello World" == testStringKoans.StringAdd("Hello ", "World"));
+        }
+        [TestMethod]
+        public void TestThatStringAddReturns_GitHub_Given_GitandHub() {
+            Assert.IsTrue("GitHub" == testStringKoans.StringAdd("Git", "Hub"));
+        }
+        [TestMethod]
+        public void TestThatStringAddReturns_CatDog_Given_CatandDog() {
+            Assert.IsTrue("CatDog" == testStringKoans.StringAdd("Cat", "Dog"));
+        }
+        [TestMethod]
+        public void TestThatStringAddReturns_Firefighter_Given_Fireandfighter() {
+            Assert.IsTrue("Firefighter" == testStringKoans.StringAdd("Fire", "fighter"));
         }
 
         //----------START----------Tests for FirstLast problem
@@ -224,12 +256,16 @@ namespace CSharp_Koans{
             Assert.IsTrue("Buzz" == testStringKoans.FizzBuzz("bub"));
         }
         [TestMethod]
-        public void TestFizzBuzzReturns_Word_Given_Word_with_no_f_b_at_beginning_or_end() {
+        public void TestFizzBuzzReturns_lad_Given_lad() {
             Assert.IsTrue("lad" == testStringKoans.FizzBuzz("lad"));
         }
         [TestMethod]
         public void TestFizzBuzzReturns_FizzBuzz_Given_Fab() {
             Assert.IsTrue("FizzBuzz" == testStringKoans.FizzBuzz("fab"));
+        }
+        [TestMethod]
+        public void TestFizzBuzzReturns_rough_Given_rough() {
+            Assert.IsTrue("rough" == testStringKoans.FizzBuzz("rough"));
         }
 
 
@@ -250,7 +286,10 @@ namespace CSharp_Koans{
         public void TestDogReturns_true_Given_adOfg() {
             Assert.IsTrue(testStringKoans.Dog("adOfg"));
         }
-
+        [TestMethod]
+        public void TestDogReturns_false_Given_asdf() {
+            Assert.IsFalse(testStringKoans.Dog("asdf"));
+        }
     } 
 
      //-------------------------START-------------------------------------------------Tests for Array Koans
@@ -270,6 +309,25 @@ namespace CSharp_Koans{
             int[] resultArr = testArrayKoans.ArrayByTwo(arr);
             Assert.IsTrue(resultArr[0] == 24);
         }
+        [TestMethod]
+        public void TestThatArrayByTwoReturns_Four_AsSecondNum_Given_Array_TwelveTwoThree() {
+            int[] arr = new[] { 12, 2, 3 };
+            int[] resultArr = testArrayKoans.ArrayByTwo(arr);
+            Assert.IsTrue(resultArr[1] == 4);
+        }
+        [TestMethod]
+        public void TestThatArrayByTwoReturns_Six_AsThirdNum_Given_Array_TwelveTwoThree() {
+            int[] arr = new[] { 12, 2, 3 };
+            int[] resultArr = testArrayKoans.ArrayByTwo(arr);
+            Assert.IsTrue(resultArr[2] == 6);
+        }
+        [TestMethod]
+        public void TestThatArrayByTwoReturns_0_AsFirstNum_Given_Array_ZeroTwoThree() {
+            int[] arr = new[] { 0, 2, 3 };
+            int[] resultArr = testArrayKoans.ArrayByTwo(arr);
+            Assert.IsTrue(resultArr[0] == 0);
+        }
+
         //----------START----------Tests for ArrayWithS problem
         [TestMethod]
         public void TestThatArrayWithSReturns_Strings_AsFirstElement_Given_Array_StringDogAnimal() {
@@ -278,18 +336,29 @@ namespace CSharp_Koans{
             Assert.IsTrue(resultArr[0] == "Strings");
         }
         [TestMethod]
-        public void TestThatArrayWithSReturns_Dogs_AsSecondElement_Given_Array_StringDogAnimal() {
-            string[] arr = new[] { "String", "Dog", "Animal" };
+        public void TestThatArrayWithSReturns_Dogs_AsSecondElement_Given_Array_StringDog() {
+            string[] arr = new[] { "String", "Dog" };
             string[] resultArr = testArrayKoans.ArrayWithS(arr);
             Assert.IsTrue(resultArr[1] == "Dogs");
         }
         [TestMethod]
-        public void TestThatArrayWithSReturns_Animals_AsThirdElement_Given_Array_StringDogAnimal() {
-            string[] arr = new[] { "String", "Dog", "Animal" };
+        public void TestThatArrayWithSReturns_Basketballs_AsFirstElement_Given_Array_Basketball() {
+            string[] arr = new[] { "Basketball" };
             string[] resultArr = testArrayKoans.ArrayWithS(arr);
-            Assert.IsTrue(resultArr[2] == "Animals");
+            Assert.IsTrue(resultArr[0] == "Basketballs");
         }
-
+        [TestMethod]
+        public void TestThatArrayWithSReturns_Balls_AsFourthElement_Given_Array_StringDogAnimalBall() {
+            string[] arr = new[] { "String", "Dog", "Animal", "Ball" };
+            string[] resultArr = testArrayKoans.ArrayWithS(arr);
+            Assert.IsTrue(resultArr[3] == "Balls");
+        }
+        [TestMethod]
+        public void TestThatArrayWithSReturns_Kites_AsFirstElement_Given_Array_Kite() {
+            string[] arr = new[] { "Kite" };
+            string[] resultArr = testArrayKoans.ArrayWithS(arr);
+            Assert.IsTrue(resultArr[0] == "Kites");
+        }
 
         //----------START----------Tests for ArrayReverse problem
         [TestMethod]
@@ -316,6 +385,12 @@ namespace CSharp_Koans{
             string[] resultArr = testArrayKoans.ArrayReverse(arr);
             Assert.IsTrue(resultArr[1] == "Orange");
         }
+        [TestMethod]
+        public void TestThatArrayReverseReturns_Kite_AsFirstElement_Given_Array_ArchAirplaneKite() {
+            string[] arr = new[] { "Arch", "Airplane", "Kite" };
+            string[] resultArr = testArrayKoans.ArrayReverse(arr);
+            Assert.IsTrue(resultArr[0] == "Kite");
+        }
         //----------START----------Tests for GreaterThanTen problem
         [TestMethod]
         public void TestThatGreaterThanTen_Returns_False__Given_OneTwoThree() {
@@ -328,8 +403,18 @@ namespace CSharp_Koans{
             Assert.IsTrue(testArrayKoans.GreaterThanTen(arr));
         }
         [TestMethod]
-        public void TestThatGreaterThanTen_Returns_False__Given_TwentyTwenty() {
+        public void TestThatGreaterThanTen_Returns_True__Given_TwentyTwenty() {
             int[] arr = new[] { 20, 20 };
+            Assert.IsTrue(testArrayKoans.GreaterThanTen(arr));
+        }
+        [TestMethod]
+        public void TestThatGreaterThanTen_Returns_False__Given_Zero() {
+            int[] arr = new[] { 0 };
+            Assert.IsFalse(testArrayKoans.GreaterThanTen(arr));
+        }
+        [TestMethod]
+        public void TestThatGreaterThanTen_Returns_False__Given_Ten() {
+            int[] arr = new[] { 10 };
             Assert.IsTrue(testArrayKoans.GreaterThanTen(arr));
         }
     }
@@ -354,16 +439,33 @@ namespace CSharp_Koans{
             int num = 1;
             Assert.IsFalse(testLogicKoans.Lottery(num));
         }
+        [TestMethod]
+        public void TestThatLottery_Returns_False_Given_Num_Three() {
+            int num = 3;
+            Assert.IsFalse(testLogicKoans.Lottery(num));
+        }
+        [TestMethod]
+        public void TestThatLottery_Returns_False_Given_Num_Fifteen() {
+            int num = 15;
+            Assert.IsFalse(testLogicKoans.Lottery(num));
+        }
         //----------START----------Tests for LotteryLucky problem
         [TestMethod]
         public void TestThatLotteryLucky_Returns_False_Given_Num_OneandTrue() {
-            int num = 1;
-            Assert.IsTrue(testLogicKoans.LotteryLucky(num,true));
+            Assert.IsTrue(testLogicKoans.LotteryLucky(1,true));
         }
         [TestMethod]
         public void TestThatLotteryLucky_Returns_False_Given_Num_OneandFalse() {
-            int num = 1;
-            Assert.IsFalse(testLogicKoans.LotteryLucky(num, false));
+            Assert.IsFalse(testLogicKoans.LotteryLucky(1, false));
+        }
+        public void TestThatLotteryLucky_Returns_False_Given_Num_FifteenandFalse() {
+            Assert.IsFalse(testLogicKoans.LotteryLucky(15, false));
+        }
+        public void TestThatLotteryLucky_Returns_True_Given_Num_SixteenandTrue() {
+            Assert.IsFalse(testLogicKoans.LotteryLucky(16, true));
+        }
+        public void TestThatLotteryLucky_Returns_False_Given_Num_TwoandFalse() {
+            Assert.IsFalse(testLogicKoans.LotteryLucky(2, false));
         }
         //----------START----------Tests for IsLucky problem
         [TestMethod]
@@ -373,6 +475,18 @@ namespace CSharp_Koans{
         [TestMethod]
         public void TestThatIsLucky_Returns_True_Given_SevenAndThree() {
             Assert.IsTrue(testLogicKoans.IsLucky(7, 3));
+        }
+        [TestMethod]
+        public void TestThatIsLucky_Returns_False_Given_EightAndZero() {
+            Assert.IsFalse(testLogicKoans.IsLucky(8, 0));
+        }
+        [TestMethod]
+        public void TestThatIsLucky_Returns_True_Given_FourAndThree() {
+            Assert.IsTrue(testLogicKoans.IsLucky(4, 3));
+        }
+        [TestMethod]
+        public void TestThatIsLucky_Returns_True_Given_SixAndOne() {
+            Assert.IsTrue(testLogicKoans.IsLucky(6, 1));
         }
         //----------START----------Tests for InRange problem
         [TestMethod]
@@ -386,6 +500,14 @@ namespace CSharp_Koans{
         [TestMethod]
         public void TestThatInRange_Returns_False_Given_Zero() {
             Assert.IsFalse(testLogicKoans.InRange(0));
+        }
+        [TestMethod]
+        public void TestThatInRange_Returns_True_Given_One() {
+            Assert.IsTrue(testLogicKoans.InRange(1));
+        }
+        [TestMethod]
+        public void TestThatInRange_Returns_False_Given_NegativeOne() {
+            Assert.IsFalse(testLogicKoans.InRange(-1));
         }
         
     }
