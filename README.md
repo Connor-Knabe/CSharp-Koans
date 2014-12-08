@@ -32,13 +32,30 @@ If you are interested in more coding challenges similar to this then you may wan
 
 
 #####Things to keep in mind:#####
-The answers to these problems are located in the KoanAnswers.cs file which is in the CSharp-Koans folder.
+
+The KoansToBeSolved.cs file is the only file you need to make changes too.  
 
 Some of the tests will pass from the beginning since there are tests that check for the method to return false or true.  
 
 In order to know that you have completed the method correctly you would want to verify to see that above the method it says all of the tests are passing.  For example the Is15 method should say 4 references | 4/4 passing. If you click on that it will pull up all of the tests that are associated with that method.
 
-There are different categories 
+
+#####Program Structure:#####
+The answers to these problems are located in the KoanAnswers.cs file which is in the CSharp-Koans folder.
+
+There are two important files in the CSharp-Koans project one with the tests named “TestYourEnlightenment.cs” and one with the methods you must implement “KoansToBeSolved.cs”
+
+Both files are broken down into various classes and methods which correspond to the type of question you must solve.  
+
+The different types of questions include:
+
+* Beginner
+* Math
+* String
+* Array
+* Logic
+* List
+
 
 
 
