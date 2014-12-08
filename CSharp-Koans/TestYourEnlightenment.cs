@@ -16,6 +16,10 @@ namespace CSharp_Koans{
             Assert.IsTrue(testBeginnerKoans.Is15(10,5));
         }
         [TestMethod]
+        public void TestThatIs15Returns_True_Given_0nd15() {
+            Assert.IsTrue(testBeginnerKoans.Is15(0, 15));
+        }
+        [TestMethod]
         public void TestThatIs15Returns_False_Given_10and15() {
             Assert.IsFalse(testBeginnerKoans.Is15(10, 15));
         }
