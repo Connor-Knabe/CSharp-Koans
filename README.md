@@ -10,7 +10,7 @@ https://github.com/Connor-Knabe/CSharp-Koans
 <br />
 3. Begin by opening the KoansToBeSolved.cs file
 <br />
-4. In this file there are method that you must implement
+4. In this file there are method that you must implement (comments explain what to do)
 <br />
 5. To check to see your progress click Test(navigation bar) > Run > All tests
 <br />
