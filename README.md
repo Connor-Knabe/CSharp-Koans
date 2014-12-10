@@ -43,7 +43,8 @@ In order to know that you have completed the method correctly you would want to 
 #####Program Structure:#####
 The answers to these problems are located in the KoanAnswers.cs file which is in the CSharp-Koans folder.
 
-There are two important files in the CSharp-Koans project one with the tests named “TestYourEnlightenment.cs” and one with the methods you must implement “KoansToBeSolved.cs”
+There are two important files in the CSharp-Koans project one with the tests named “TestYourEnlightenment.cs” and one with the methods you must implement “KoansToBeSolved.cs” 
+Also there is another file named "KoanQuestions.cs" which has the unsolved questions without implementation.
 
 Both files are broken down into various classes and methods which correspond to the type of question you must solve.  
 
