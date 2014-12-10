@@ -4,6 +4,7 @@
 
 ####How to use:####
 https://github.com/Connor-Knabe/CSharp-Koans
+<br />
 1. Clone this repo 
 <br />
 2. Open the project using Visual Studio
